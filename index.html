@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valete | Marketing de Alta Performace</title>
+    <link rel="icon" href="https://lh3.googleusercontent.com/d/1EI1JhLWtGqAA97lmZ0CHssSwLakFo8UG" referrerPolicy="no-referrer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#050505',
+                        darker: '#0a0a0a',
+                        accent: '#DC2626',
+                        whatsapp: '#25D366',
+                        pastel: '#C6A87C',
+                    },
+                    fontFamily: {
+                        display: ['Syne', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #a3a3a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .bento-item {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
+            transform: scale(1.02);
+        }
+        .neon-pastel {
+            color: #C6A87C;
+            text-shadow: 0 0 5px rgba(198, 168, 124, 0.7), 0 0 10px rgba(198, 168, 124, 0.5), 0 0 20px rgba(198, 168, 124, 0.3);
+        }
+        .neon-pastel-border {
+            border-color: rgba(198, 168, 124, 0.5);
+            box-shadow: 0 0 10px rgba(198, 168, 124, 0.2) inset, 0 0 15px rgba(198, 168, 124, 0.4);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-accent selection:text-white">
+
+    <header class="fixed top-0 left-0 w-full z-50 glass border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="font-display font-bold text-2xl tracking-tighter text-white flex items-center">
+                <div class="relative inline-flex items-center justify-center mr-2 w-10 h-10 overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/d/1EI1JhLWtGqAA97lmZ0CHssSwLakFo8UG" alt="Valete Logo" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                </div>
+                <span class="text-red-500">V</span>ALETE<span class="text-accent">.</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#diferenciais" class="hover:text-white transition-colors">Diferenciais</a>
+                <a href="#servicos" class="hover:text-white transition-colors">Ecossistema</a>
+                <a href="#depoimentos" class="hover:text-white transition-colors">Resultados</a>
+            </nav>
+            <a href="https://wa.me/5567933001147?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold bg-white text-dark rounded-full btn-hover">
+                Agendar Sessão
+            </a>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2574&auto=format&fit=crop" alt="Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/50 via-dark to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div class="hero-elem inline-block mb-6 px-4 py-1.5 rounded-full border neon-pastel-border glass text-xs font-medium tracking-widest uppercase neon-pastel">
+                Agência Full Service 360º
+            </div>
+            <h1 class="hero-elem font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] mb-8">
+                Não entregamos posts.<br>
+                <span class="text-gradient">Entregamos ativos de venda.</span>
+            </h1>
+            <p class="hero-elem max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-10 font-light leading-relaxed">
+                A intersecção perfeita entre design de alta qualidade e a ciência da conversão. Transformamos sua autoridade em escala previsível.
+            </p>
+            <div class="hero-elem flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/5567992300984?text=Ol%C3%A1%2C%20vim%20pelo%20site.%20Gostaria%20de%20saber%20mais%20sobre%20como%20escalar%20meu%20neg%C3%B3cio." target="_blank" class="w-full sm:w-auto px-8 py-4 bg-accent text-white font-bold rounded-full text-lg btn-hover flex items-center justify-center gap-2">
+                    Escalar Meu Negócio
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 border-y border-white/5 bg-darker overflow-hidden">
+        <div class="marquee-container flex items-center opacity-50">
+            <div class="marquee-content flex gap-16 px-8 text-xl font-display font-semibold tracking-widest uppercase">
+                <span>Tráfego Pago</span>
+                <span class="text-accent">•</span>
+                <span>Copywriting Estratégico</span>
+                <span class="text-accent">•</span>
+                <span>Branding Premium</span>
+                <span class="text-accent">•</span>
+                <span>Web Design</span>
+                <span class="text-accent">•</span>
+                <span>Automação</span>
+                <span class="text-accent">•</span>
+                <span>Tráfego Pago</span>
+                <span class="text-accent">•</span>
+                <span>Copywriting Estratégico</span>
+                <span class="text-accent">•</span>
+                <span>Branding Premium</span>
+                <span class="text-accent">•</span>
+                <span>Web Design</span>
+                <span class="text-accent">•</span>
+                <span>Automação</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20 scroll-elem">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">A Ciência da Conversão</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">Nossa metodologia une precisão analítica com estética premium para dominar o seu mercado.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+            <div class="bento-item scroll-elem md:col-span-2 glass rounded-3xl p-10 relative overflow-hidden group flex flex-col justify-end">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-150 duration-700"></div>
+                <h3 class="font-display text-2xl font-bold mb-3 relative z-10">Copywriting como Ciência</h3>
+                <p class="text-gray-400 relative z-10 max-w-md">O coração do negócio. Usamos a psicologia de vendas e palavras milimetricamente escolhidas para guiar seu cliente pelo funil e gerar conversão imediata.</p>
+            </div>
+            
+            <div class="bento-item scroll-elem glass rounded-3xl p-10 relative overflow-hidden group flex flex-col justify-end">
+                <h3 class="font-display text-2xl font-bold mb-3 relative z-10">Branding & Performance</h3>
+                <p class="text-gray-400 relative z-10">Unimos a autoridade visual inquestionável com a escala agressiva de vendas através de Ads.</p>
+            </div>
+
+            <div class="bento-item scroll-elem glass rounded-3xl p-10 relative overflow-hidden group flex flex-col justify-end">
+                <h3 class="font-display text-2xl font-bold mb-3 relative z-10">DNA Analítico</h3>
+                <p class="text-gray-400 relative z-10">Sem achismos. Base de engenharia aplicada ao marketing: métricas, dados e processos estruturados.</p>
+            </div>
+
+            <div class="bento-item scroll-elem md:col-span-2 glass rounded-3xl p-10 relative overflow-hidden group flex flex-col justify-end">
+                <div class="absolute inset-0 z-0">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" alt="Data" class="w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darker via-darker/80 to-transparent"></div>
+                </div>
+                <h3 class="font-display text-2xl font-bold mb-3 relative z-10">Ecossistema 360º</h3>
+                <p class="text-gray-400 relative z-10 max-w-md">Do logo ao site, da automação aos anúncios. Conveniência absoluta com alta performance em um único lugar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-32 bg-darker relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="scroll-elem">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold mb-8 leading-tight">Tiramos sua empresa da estagnação.</h2>
+                    <p class="text-gray-400 text-lg mb-10">Para o empresário estagnado, o profissional liberal de alto valor e o infoprodutor em escala. Nós construímos o ecossistema que torna você a única opção lógica do mercado.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 text-accent">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-xl mb-2">Tráfego Pago (Ads)</h4>
+                                <p class="text-gray-500">Gestão estratégica no Meta e Google para captação de leads qualificados.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 text-accent">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-xl mb-2">Branding & Design Gráfico</h4>
+                                <p class="text-gray-500">Identidade visual completa que transmite profissionalismo e valor premium.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 text-accent">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-xl mb-2">Sites e Landing Pages</h4>
+                                <p class="text-gray-500">Páginas de alta performance, otimizadas para conversão e velocidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative scroll-elem">
+                    <div class="aspect-[4/5] rounded-3xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Estratégia" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-darker via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 glass p-6 rounded-2xl max-w-xs hidden md:block">
+                        <div class="text-4xl font-display font-bold text-accent mb-2">24h</div>
+                        <p class="text-sm text-gray-300">Atendimento premium e suporte contínuo para o seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20 scroll-elem">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Resultados que Transformam</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">O que dizem os empresários que escalaram com a Valete.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl scroll-elem">
+                <div class="flex text-accent mb-6">
+                    ★★★★★
+                </div>
+                <p class="text-gray-300 mb-8 leading-relaxed">"Estávamos estagnados no boca a boca. A Valete reconstruiu nosso posicionamento e implementou um funil que traz leads qualificados todos os dias. O ROI foi imediato."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-800 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=256&auto=format&fit=crop" alt="Cliente" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h5 class="font-bold">Renata M.</h5>
+                        <p class="text-sm text-gray-500">Dona de Clínica Estética</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-3xl scroll-elem">
+                <div class="flex text-accent mb-6">
+                    ★★★★★
+                </div>
+                <p class="text-gray-300 mb-8 leading-relaxed">"Como advogado, tinha receio de parecer 'vendedor'. O copy e o branding criados pela Valete me posicionaram como autoridade premium. Hoje cobro 3x mais pelos meus serviços."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-800 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=256&auto=format&fit=crop" alt="Cliente" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h5 class="font-bold">Dra. Helena C.</h5>
+                        <p class="text-sm text-gray-500">Advogada Tributarista</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-3xl scroll-elem md:col-span-2 lg:col-span-1">
+                <div class="flex text-accent mb-6">
+                    ★★★★★
+                </div>
+                <p class="text-gray-300 mb-8 leading-relaxed">"Meu e-commerce havia batido no teto. O custo por clique estava alto. A abordagem analítica e a mudança na comunicação visual destravou nossa escala."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-800 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=256&auto=format&fit=crop" alt="Cliente" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h5 class="font-bold">Fernando T.</h5>
+                        <p class="text-sm text-gray-500">CEO E-commerce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-accent/5"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 scroll-elem">
+            <h2 class="font-display text-5xl md:text-6xl font-bold mb-8">Pronto para a escala?</h2>
+            <p class="text-xl text-gray-400 mb-12">Pare de perder dinheiro para concorrentes inferiores. Assuma o posicionamento que sua empresa merece.</p>
+            <a href="https://wa.me/5567992300984?text=Ol%C3%A1%2C%20vim%20pelo%20site.%20Gostaria%20de%20falar%20com%20um%20especialista." target="_blank" class="inline-flex items-center justify-center px-10 py-5 bg-white text-dark font-bold rounded-full text-lg btn-hover">
+                Falar com um Especialista
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="font-display font-bold text-2xl tracking-tighter text-white mb-6 flex items-center justify-center">
+                <div class="relative inline-flex items-center justify-center mr-2 w-10 h-10 overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/d/1EI1JhLWtGqAA97lmZ0CHssSwLakFo8UG" alt="Valete Logo" class="w-full h-full object-contain" referrerPolicy="no-referrer">
+                </div>
+                <span class="text-red-500">V</span>ALETE<span class="text-accent">.</span>
+            </div>
+            <p class="text-sm text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
+                Copyright 2026 Marketing de Performance e Branding Estratégico. A Valete não entrega apenas "posts"; ela entrega ativos de venda. O nicho está na intersecção entre o design de alta qualidade (branding) e a ciência da conversão (copywriting e tráfego). 2. Defina o segmento do seu negócio Agência Full Service (360º) focada em Escala e Autoridade Digital. O foco principal é tirar empresas da estagnação através de um ecossistema completo: desde a criação da identidade visual e logomarca, até a gestão de redes sociais e anúncios pagos (Ads). O diferencial é o Copy Estratégico — usar as palavras certas para transformar seguidores em clientes.
+            </p>
+            <a href="https://www.instagram.com/agenciavalete6/" target="_blank" class="text-accent hover:text-white transition-colors text-sm font-medium">
+                @agenciavalete6
+            </a>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="fixed bottom-24 right-6 w-80 sm:w-96 glass rounded-2xl border border-white/10 flex flex-col overflow-hidden z-50 transition-all duration-300 transform translate-y-4 opacity-0 pointer-events-none">
+        <!-- Header -->
+        <div class="bg-darker p-4 border-b border-white/5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-whatsapp text-white flex items-center justify-center font-bold">
+                    V
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm">Agência Valete</h4>
+                    <p class="text-xs text-gray-400">Atendimento Especializado</p>
+                </div>
+            </div>
+            <button id="close-chat" class="text-gray-400 hover:text-white transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Messages Area -->
+        <div id="chat-messages" class="p-4 h-80 overflow-y-auto flex flex-col gap-3 bg-dark/80">
+            <!-- Messages will be injected here -->
+        </div>
+        
+        <!-- Input Area -->
+        <div class="p-4 bg-darker border-t border-white/5">
+            <form id="chat-form" class="flex gap-2">
+                <input type="text" id="chat-input" class="flex-1 bg-dark border border-white/10 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-whatsapp transition-colors text-white" placeholder="Digite sua resposta..." autocomplete="off">
+                <button type="submit" class="w-10 h-10 rounded-full bg-whatsapp text-white flex items-center justify-center hover:scale-105 transition-transform shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAB -->
+    <button id="fab-button" class="fixed bottom-6 right-6 w-14 h-14 bg-whatsapp text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-50 group">
+        <span class="absolute top-0 right-0 w-3 h-3 bg-red-500 rounded-full border-2 border-dark"></span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tl = gsap.timeline();
+        tl.from(".hero-elem", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+        gsap.utils.toArray('.scroll-elem').forEach(elem => {
+            gsap.from(elem, {
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            });
+        });
+
+        // Chat Logic
+        const fabButton = document.getElementById('fab-button');
+        const chatWidget = document.getElementById('chat-widget');
+        const closeChat = document.getElementById('close-chat');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const chatMessages = document.getElementById('chat-messages');
+
+        let chatOpen = false;
+        let currentStep = 0;
+        const userData = {
+            nome: '',
+            negocio: '',
+            interesse: ''
+        };
+
+        const toggleChat = () => {
+            chatOpen = !chatOpen;
+            if (chatOpen) {
+                chatWidget.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                if (currentStep === 0) {
+                    setTimeout(() => addBotMessage('Olá! Bem-vindo à Agência Valete. Para começarmos, qual é o seu nome?'), 300);
+                    currentStep = 1;
+                }
+                chatInput.focus();
+            } else {
+                chatWidget.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }
+        };
+
+        fabButton.addEventListener('click', toggleChat);
+        closeChat.addEventListener('click', toggleChat);
+
+        const addBotMessage = (text) => {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'self-start bg-darker border border-white/10 rounded-2xl rounded-tl-none px-4 py-2 max-w-[85%] text-sm text-gray-200';
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        };
+
+        const addUserMessage = (text) => {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'self-end bg-whatsapp text-white rounded-2xl rounded-tr-none px-4 py-2 max-w-[85%] text-sm font-medium';
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        };
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const text = chatInput.value.trim();
+            if (!text) return;
+
+            addUserMessage(text);
+            chatInput.value = '';
+
+            // Process response based on step
+            setTimeout(() => {
+                if (currentStep === 1) {
+                    userData.nome = text;
+                    addBotMessage(`Prazer, ${userData.nome}! Qual é o segmento do seu negócio atualmente?`);
+                    currentStep = 2;
+                } else if (currentStep === 2) {
+                    userData.negocio = text;
+                    addBotMessage('Entendi. E qual é a sua principal necessidade hoje? (Ex: Mais vendas, branding, novo site...)');
+                    currentStep = 3;
+                } else if (currentStep === 3) {
+                    userData.interesse = text;
+                    addBotMessage('Perfeito! Estou gerando seu link de atendimento...');
+                    
+                    setTimeout(() => {
+                        const baseUrl = 'https://wa.me/5567992300984';
+                        const message = `Olá, vim pelo site. Nome: ${userData.nome} | Negócio: ${userData.negocio} | Interesse: ${userData.interesse}`;
+                        const finalUrl = `${baseUrl}?text=${encodeURIComponent(message)}`;
+                        
+                        addBotMessage('Tudo pronto! Clique no botão abaixo para falar com nosso especialista no WhatsApp.');
+                        
+                        const linkBtn = document.createElement('a');
+                        linkBtn.href = finalUrl;
+                        linkBtn.target = '_blank';
+                        linkBtn.className = 'self-start mt-2 bg-green-500 text-white font-bold rounded-full px-6 py-2 text-sm hover:bg-green-600 transition-colors flex items-center gap-2';
+                        linkBtn.innerHTML = '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Ir para o WhatsApp';
+                        chatMessages.appendChild(linkBtn);
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                        
+                        currentStep = 4; // Finished
+                        chatInput.disabled = true;
+                        chatInput.placeholder = "Atendimento iniciado.";
+                    }, 1000);
+                }
+            }, 500);
+        });
+    </script>
+</body>
+</html>
