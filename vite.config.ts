@@ -7,8 +7,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   
   return {
-    // ATUALIZADO PARA DOMÍNIO PRÓPRIO:
-    // Agora que você usa valetemarketing.com.br, o site fica na raiz '/'
+    // ATUALIZADO PARA: agenciavalete.com.br
     base: '/', 
     
     plugins: [react(), tailwindcss()],
