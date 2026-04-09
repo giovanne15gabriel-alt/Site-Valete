@@ -7,8 +7,9 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   
   return {
-    // AJUSTE PARA O NOVO REPOSITÓRIO:
-    base: '/Site-Valete/', 
+    // ATUALIZADO PARA DOMÍNIO PRÓPRIO:
+    // Agora que você usa valetemarketing.com.br, o site fica na raiz '/'
+    base: '/', 
     
     plugins: [react(), tailwindcss()],
     define: {
